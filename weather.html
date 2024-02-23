@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+<!-- container baira outline ko lagi -->
+<div class="container" id="container">
+    <div class="search-box">
+        <i class='bx bx-map' ></i>
+        <input type="text" placeholder="search location" id="city">
+       <button ><i class='bx bx-search'></i></button> 
+    </div>
+<!-- bhitra content ko lagi image -->
+    <div class="weather-box" id="weatherbox">
+        <div class="box">
+            <div class="weather-info">
+                <div class="weather">
+                    <img src="images/cloud.png" id="image">
+                    <p class="temperature" id="temperature">0<span>°C</span></p>
+                    <p class="description" id="description">Partial cloudy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- weather ko details haru -->
+    <div class="weather-details" id="weatherdetails">
+        <div class="humidity">
+            <i class='bx bx-water'></i>
+            <div class="text-info">
+                <span id="humidity">0 %</span>
+
+            </div>
+            
+            <p>Humidity</p>
+        </div>
+        <div class="wind">
+            <i class='bx bx-wind' ></i>
+            <div class="text-info">
+                <span id="wind">0 km/h</span>
+
+            </div>
+            <p>Wind speed</p>
+        </div>
+        
+    </div>
+    <div class="not-found">
+        <div class="box">
+           <img src="images/404.png" class="haha"> 
+           <p>Sorry! There is no such location.</p>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="weather.js"></script>
+
+</body>
+</html>
